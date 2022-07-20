@@ -95,3 +95,6 @@ class GFG
         classifyTriangle(p1, p2, p3);
     }
 }
+
+// Questions: Which of the functions have side effects?
+// Answer:

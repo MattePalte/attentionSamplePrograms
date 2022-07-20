@@ -27,3 +27,6 @@ class GFG
         towerOfHanoi(n, 'A', 'C', 'B');
     }
 }
+
+// Questions: How does the algorithm moves disks from the starting rod to the ending rod?
+// Answer: 

@@ -89,3 +89,6 @@ class GFG
 		Queen.solveNQ();
 	}
 }
+
+// Question: What are valid dimensions and values for the array `board`?
+// Answer:

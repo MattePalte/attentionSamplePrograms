@@ -47,3 +47,6 @@ class ScheduledTask<T> where T : struct {
         return this.result;
     }
 }
+
+// Question: You have a fresh instance of a ScheduledTask making a time intensive call. How would you assign the result of the call to a variable?
+// Answer: 
