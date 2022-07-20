@@ -1,4 +1,9 @@
-/*************************************************************************************************/
+/***************************************************************************/
+
+/*
+# The following code deals with the creation of a tree data structure.
+*/
+
 using System;
 
 class GFG
@@ -84,3 +89,11 @@ class GFG
         printInorder(root);
     }
 }
+
+/*
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer:
+*/

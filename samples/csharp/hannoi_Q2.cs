@@ -1,5 +1,17 @@
 /*************************************************************************************************/
 
+
+/*
+# In the Tower of Hanoi problem you have to move all the disks
+
+# from the left hand post to the right hand post.
+
+# You can only move the disks one at a time and you can never
+
+# place a bigger disk on a smaller disk.
+ */
+
+
 using System;
 
 class GFG
@@ -15,15 +27,21 @@ class GFG
 
         towerOfHanoi(n-1, from_rod, aux_rod, to_rod);
 
-        Console.WriteLine("Move disk " + n + " from rod " + 
+        Console.WriteLine("Move disk " + n + " from rod " +
                           from_rod + " to rod " + to_rod);
 
         towerOfHanoi(n-1, aux_rod, to_rod, from_rod);
     }
-     
+
     public static void Main(String []args)
     {
         int n = 4;
         towerOfHanoi(n, 'A', 'C', 'B');
     }
 }
+
+/*
+# Questions: Which is the base case of the algorithm?
+
+# Answer:
+ */

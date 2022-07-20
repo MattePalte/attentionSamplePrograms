@@ -1,9 +1,11 @@
-#*************************************************************************************************#
-#The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+# ****************************************************************************#
 
-#Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
+# The n-queens puzzle is the problem of placing n queens on an n x n chessboard
 
-#Each solution contains a distinct board configuration of the n-queens' placement, where 1 and 0 both indicate a queen and an empty space, respectively.
+# such that no two queens attack each other.
+
+# The algorithm below solves the problem just mentioned.
+
 
 global N
 N = 4
@@ -69,3 +71,8 @@ def solveNQ():
 
 
 solveNQ()
+
+
+# Question: How would you expect the run time of `solveNQ(n)` to scale with `n`?
+
+# Answer:

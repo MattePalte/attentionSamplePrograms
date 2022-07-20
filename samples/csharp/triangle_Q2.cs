@@ -1,3 +1,10 @@
+/***************************************************************************/
+
+/*
+# The following code reasons about triangles in the geometrical sense.
+*/
+
+
 using System;
 
 class GFG
@@ -95,3 +102,12 @@ class GFG
         classifyTriangle(p1, p2, p3);
     }
 }
+
+
+/*
+# Questions: Which output will you get for the three points [1, 2], [1, 3],
+
+# and [1, 4]?
+
+# Answer:
+*/

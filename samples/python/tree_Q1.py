@@ -1,4 +1,7 @@
-#*************************************************************************************************#
+# ***************************************************************************
+
+# The following code deals with the creation of a tree data structure.
+
 
 class Node:
 
@@ -75,3 +78,10 @@ if __name__ == "__main__":
           "the constructed tree: ")
 
     printInorder(root)
+
+
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer:

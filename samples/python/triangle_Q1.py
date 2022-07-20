@@ -1,4 +1,7 @@
-#*************************************************************************************************#
+# *************************************************************************
+
+# The following code reasons about triangles in the geometrical sense.
+
 
 class point:
 	def __init__(self, x, y):
@@ -54,3 +57,10 @@ p1 = point(0, 0)
 p2 = point(1, 1)
 p3 = point(1, 2)
 classifyTriangle(p1, p2, p3)
+
+
+# Questions: Which of the functions have side effects (namely it modifies some
+
+# state variable value outside its local environment?
+
+# Answer:

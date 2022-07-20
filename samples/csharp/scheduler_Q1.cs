@@ -1,4 +1,13 @@
-/*************************************************************************************************/
+/***************************************************************************/
+
+/*
+# This helper allows you to perform some async operation and keep track of
+
+# whether it's still ongoing, so in case someone wants to perform it again (and
+
+# get a Promise for its completion) the same ongoing promise can be reused.
+*/
+
 #nullable enable
 using System;
 using System.Threading.Tasks;
@@ -38,3 +47,12 @@ class ScheduledTask<T> where T : struct {
         }
     }
 }
+
+
+/*
+# Question: You have a fresh instance of a `ScheduledTask` making a time
+
+# intensive call. How would you assign the result of the call to a variable?
+
+# Answer:
+*/

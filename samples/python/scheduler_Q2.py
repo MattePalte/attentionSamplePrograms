@@ -1,12 +1,22 @@
+# ****************************************************************************
+
+# This helper allows you to perform some async operation and keep track of
+
+# whether it's still ongoing, so in case someone wants to perform it again (and
+
+# get a Promise for its completion) the same ongoing promise can be reused.
+
+
 import asyncio
 from typing import Awaitable, Callable, TypeVar, Generic, Union
 from numpy import Inf
 
 T = TypeVar('T')
 
+
 class ScheduledTask(Generic[T]):
-    def __init__(self, 
-            taskProducer: Callable[[], 'asyncio.Task[T]'], 
+    def __init__(self,
+            taskProducer: Callable[[], 'asyncio.Task[T]'],
             expirationMs: float = Inf):
         self.expirationMs = expirationMs
         self.taskProducer = taskProducer
@@ -36,3 +46,8 @@ class ScheduledTask(Generic[T]):
                 self._result = None
     def value(self) -> Union[T, None]:
         return self._result
+
+
+# Question: What is the role of the parameter expirationMs?
+
+# Answer:
