@@ -1,4 +1,8 @@
-/*************************************************************************************************/
+/***************************************************************************/
+
+/*
+# The following code deals with the creation of a tree data structure.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -77,3 +81,11 @@ int main()
 
     return 0;
 }
+
+/*
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer:
+*/

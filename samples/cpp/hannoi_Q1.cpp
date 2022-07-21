@@ -1,5 +1,16 @@
 /*************************************************************************************************/
 
+
+/*
+# In the Tower of Hanoi problem you have to move all the disks
+
+# from the left hand post to the right hand post.
+
+# You can only move the disks one at a time and you can never
+
+# place a bigger disk on a smaller disk.
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,3 +32,11 @@ int main()
 	int n = 4;
 	towerOfHanoi(n, 'A', 'C', 'B');	return 0;
 }
+
+/*
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+ */

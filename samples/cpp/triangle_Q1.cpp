@@ -1,4 +1,9 @@
-/*************************************************************************************************/
+/***************************************************************************/
+
+/*
+# The following code reasons about triangles in the geometrical sense.
+*/
+
 
 #include<iostream>
 #include <bits/stdc++.h>
@@ -88,3 +93,11 @@ int main()
 	classifyTriangle(p1, p2, p3);
 	return 0;
 }
+
+/*
+# Questions: Which of the functions have side effects (namely it modifies some
+
+# state variable value outside its local environment?
+
+# Answer:
+*/
