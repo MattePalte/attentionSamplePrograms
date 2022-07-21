@@ -1,4 +1,11 @@
-/*************************************************************************************************/
+/*****************************************************************************/
+
+/*
+This algorithms concerns prime numbers: number which are divisible only by
+
+themselves and by 1.
+*/
+
 #include <stdlib.h>
 #include <iostream>
 #include <vector>
@@ -43,3 +50,11 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
+/*
+Question: With a security hat, which input would you feed into the program to
+
+make it crash?
+
+Answer:
+*/
