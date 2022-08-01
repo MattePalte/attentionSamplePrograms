@@ -4,49 +4,49 @@
 
 
 class point:
-	def __init__(self, x, y):
-		self.x = x
-		self.y = y
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
 def square(x):
-	return x * x
+    return x * x
 
 def order(a, b, c):
-	copy = [a, b, c]
-	copy.sort()
-	return copy[0], copy[1], copy[2]
+    copy = [a, b, c]
+    copy.sort()
+    return copy[0], copy[1], copy[2]
 
 def euclidDistSquare(p1, p2):
-	return square(p1.x - p2.x) + square(p1.y - p2.y)
+    return square(p1.x - p2.x) + square(p1.y - p2.y)
 
 def getSideClassification(a, b, c):
-	if a == b and b == c:
-		return "Equilateral"
+    if a == b and b == c:
+        return "Equilateral"
 
-	elif a == b or b == c:
-		return "Isosceles"
-	else:
-		return "Scalene"
+    elif a == b or b == c:
+        return "Isosceles"
+    else:
+        return "Scalene"
 
 def getAngleClassification(a, b, c):
 
-	if a + b > c:
-		return "acute"
+    if a + b > c:
+        return "acute"
 
-	elif a + b == c:
-		return "right"
-	else:
-		return "obtuse"
+    elif a + b == c:
+        return "right"
+    else:
+        return "obtuse"
 
 def classifyTriangle(p1, p2, p3):
 
-	a = euclidDistSquare(p1, p2)
-	b = euclidDistSquare(p1, p3)
-	c = euclidDistSquare(p2, p3)
+    a = euclidDistSquare(p1, p2)
+    b = euclidDistSquare(p1, p3)
+    c = euclidDistSquare(p2, p3)
 
-	a, b, c = order(a, b, c)
-	print("Triangle is ", getAngleClassification(a, b, c),
-		" and ", getSideClassification(a, b, c))
+    a, b, c = order(a, b, c)
+    print("Triangle is ", getAngleClassification(a, b, c),
+        " and ", getSideClassification(a, b, c))
 
 p1 = point(3, 0)
 p2 = point(0, 4)
